@@ -1,0 +1,115 @@
+:root{
+    --preto:#040603;
+    --azulescuro:#063540;
+    --azulclaro:#048ABF;
+    --azul:#03588C;
+    --bege:#BFA065;
+    --azulbotao: #048ABF50
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Elementos base*/
+
+body {
+    background-color:var(--preto);
+    font-family: 'Arial', Times, serif;
+    color:var(--azulclaro);
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between
+}
+
+header .logo {
+    color: var(--bege);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+    margin-left: 5px;
+}
+
+header nav a{
+    text-decoration:none;
+    color: var(--azulclaro);
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: var(--azul);
+}
+
+/* Video principal */
+.ultimo-video {
+    font-size: 16px;
+    background-image: linear-gradient(rgba(0,0,0.50),rgba(0,0,0,.50)), url('/img/ultimovideo.png');
+   
+    height: 400px;
+    background-size: cover;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.ultimo-video .descricao {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.ultimo-video .titulo {
+    font-size: 40px;
+    margin-bottom: 5px;
+    font-family: 'Trebuchet MS';
+    margin-top: 10%;
+}
+
+.descricao {
+    color:white;
+}
+
+.botao {
+    background-color: var(--azulbotao);
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    margin-right: 15px;
+    font-size: 15px;
+
+    cursor: pointer;
+    transition: .2s ease all;
+}
+
+.botao:hover{
+    background-color: var(--azulclaro);
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+.container {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.ultimo-video .container {
+    width: 70%;
+}
+
+.box-video {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrossel {
+    margin-top: 5px;
+}
